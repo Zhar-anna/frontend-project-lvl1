@@ -1,10 +1,8 @@
-name: linter
+name: Linter
 on: push
 jobs:
   build:
    runs-on: ubuntu-latest
    steps:
-     - name: chekout
-     uses: actions/checkout@v2
-     - name: eslint
-     run: make lint
+     - uses: actions/checkout@v2
+     - run: make lint
