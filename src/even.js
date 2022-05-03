@@ -22,7 +22,7 @@ const ParityCheckGame = () => {
       console.log('Correct!');
       counterCorrectAnswer += 1;
     } else {
-      console.log(`${UserAnswer} is wrong answer ;(. Correct answer was ${result}\nLet's try again, ${UserName}!`);
+      console.log(`'${UserAnswer}' is wrong answer ;(. Correct answer was '${result}'\nLet's try again, ${UserName}!`);
       counterCorrectAnswer = 0;
     }
   }
