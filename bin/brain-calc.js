@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import Calculator from '../src/games/calc.js';
+import { GameFunction, Conditions } from '../src/games/calc.js';
+import GameLogic from '../src/index.js';
 
-console.log(Calculator());
+GameLogic(GameFunction, Conditions);
