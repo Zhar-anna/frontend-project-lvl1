@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import randomInteger from './randomnumber.js';
+import randomInteger from '../randomnumber.js';
 
 const ParityCheckGame = () => {
   console.log('Welcome to the Brain Games!');
@@ -22,10 +22,11 @@ const ParityCheckGame = () => {
       console.log('Correct!');
       counterCorrectAnswer += 1;
     } else {
-      console.log(`'${UserAnswer}' is wrong answer ;(. Correct answer was '${result}'\nLet's try again, ${UserName}!`);
-      counterCorrectAnswer = 0;
+      return (`'${UserAnswer}' is wrong answer ;(. Correct answer was '${result}'\nLet's try again, ${UserName}!`);
     }
   }
-  return `Congratulations, ${UserName}!`;
+  if (counterCorrectAnswer === 3) {
+    return `Congratulations, ${UserName}!`;
+  }
 };
 export default ParityCheckGame;
