@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import ParityCheckGame from '../src/games/even.js';
+import { GameFunction, Conditions } from '../src/games/even.js';
+import GameLogic from '../src/index.js';
 
-console.log(ParityCheckGame());
+GameLogic(GameFunction, Conditions);
