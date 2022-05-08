@@ -7,3 +7,5 @@
 [![asciicast](https://asciinema.org/a/492645.svg)](https://asciinema.org/a/492645)
 ### 'Calculator' game
 [![asciicast](https://asciinema.org/a/492638.svg)](https://asciinema.org/a/492638)
+### 'GCD' game
+[![asciicast](https://asciinema.org/a/492933.svg)](https://asciinema.org/a/492933)
