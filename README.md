@@ -9,3 +9,5 @@
 [![asciicast](https://asciinema.org/a/492638.svg)](https://asciinema.org/a/492638)
 ### 'GCD' game
 [![asciicast](https://asciinema.org/a/492933.svg)](https://asciinema.org/a/492933)
+### 'Progression' game
+[![asciicast](https://asciinema.org/a/493044.svg)](https://asciinema.org/a/493044)
