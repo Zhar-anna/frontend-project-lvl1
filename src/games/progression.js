@@ -12,7 +12,7 @@ const GameFunction = () => {
   const MissingNumber = randomInteger(0, ProgressionArr.length - 1);
   const CorrectAnswer = String(ProgressionArr[MissingNumber]);
   ProgressionArr[MissingNumber] = '..';
-  const Question = `${ProgressionArr}`;
+  const Question = ProgressionArr.join(' ');
   return [Question, CorrectAnswer];
 };
 export { GameFunction, Conditions };
