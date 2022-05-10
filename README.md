@@ -3,7 +3,9 @@
 [![Linter](https://github.com/Zhar-anna/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)](https://github.com/Zhar-anna/frontend-project-lvl1/actions/workflows/linter.yml)
 ### CodeClimate:
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+
 Проект представляет собой игру с 5 консольными мини-играми. 
+
 Установка для Linux/WSL 2/MacOS:
 
 1. Установить глобально Node.js версии не ниже 16.8.0
