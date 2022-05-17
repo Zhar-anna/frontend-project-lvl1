@@ -2,10 +2,26 @@
 [![Actions Status](https://github.com/Zhar-anna/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Zhar-anna/frontend-project-lvl1/actions)
 [![Linter](https://github.com/Zhar-anna/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)](https://github.com/Zhar-anna/frontend-project-lvl1/actions/workflows/linter.yml)
 ### CodeClimate:
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+<a href="https://codeclimate.com/Zhar-anna/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/9ed2c9d4498fdb30c859a577010566a62de89c112fd5e0ba78be465dc3f43757/maintainability" /></a>
 
-Проект представляет собой игру с 5 консольными мини-играми. 
+«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
 
+Калькулятор. Арифметические выражения, которые необходимо вычислить.
+Прогрессия. Поиск пропущенных чисел в последовательности чисел.
+Определение четного числа.
+Определение наибольшего общего делителя.
+Определение простого числа. 
+
+
+Ubuntu или другая Linux-система
+Готова к работе из коробки
+macOS
+Установите homebrew как основной менеджер пакетов
+Установите iterm2
+Windows
+Лучший вариант: установить Linux второй операционной системой
+Нормальный вариант: запускать Linux на виртуальной машине — руководство по работе с Linux для тех, кто пользуется Windows
+Сложный вариант: работать в Windows без установки Linux. Возможны трудности с настройкой окружения
 Установка для Linux/WSL 2/MacOS:
 
 1. Установить глобально Node.js версии не ниже 16.8.0
