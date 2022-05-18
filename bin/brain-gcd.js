@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { GameFunction, Conditions } from '../src/games/gcd.js';
-import GameLogic from '../src/index.js';
+import startGameGcd from '../src/games/gcd.js';
 
-GameLogic(GameFunction, Conditions);
+startGameGcd();

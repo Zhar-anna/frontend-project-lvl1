@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { GameFunction, Conditions } from '../src/games/prime.js';
-import GameLogic from '../src/index.js';
+import startGamePrime from '../src/games/prime.js';
 
-GameLogic(GameFunction, Conditions);
+startGamePrime();

@@ -1,19 +1,19 @@
+import gameLogic from '../index.js';
 import randomInteger from '../randomnumber.js';
 
-const Conditions = 'Find the greatest common divisor of given numbers.';
-const GameFunction = () => {
-  const Num1 = randomInteger(0, 100);
-  const Num2 = randomInteger(0, 100);
-  const Question = `${Num1} ${Num2}`;
-  let t;
-  let a = Num1;
-  let b = Num2;
-  while (b !== 0) {
-    t = b;
-    b = a % b;
-    a = t;
+const conditions = 'Find the greatest common divisor of given numbers.';
+const gcd = (a, b) => {
+  if (!b) {
+    return a;
   }
-  const CorrectAnswer = String(a);
-  return [Question, CorrectAnswer];
+  return gcd(b, a % b);
 };
-export { GameFunction, Conditions };
+const gameGcd = () => {
+  const num1 = randomInteger(0, 100);
+  const num2 = randomInteger(0, 100);
+  const question = `${num1} ${num2}`;
+  const correctAnswer = gcd(num1, num2).toString();
+  return [question, correctAnswer];
+};
+const startGameGcd = () => console.log(gameLogic(gameGcd, conditions));
+export default startGameGcd;

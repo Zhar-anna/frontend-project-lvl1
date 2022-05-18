@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { GameFunction, Conditions } from '../src/games/even.js';
-import GameLogic from '../src/index.js';
+import startGameEven from '../src/games/even.js';
 
-GameLogic(GameFunction, Conditions);
+startGameEven();
