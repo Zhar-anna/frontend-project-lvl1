@@ -9,5 +9,6 @@ const gameEven = () => {
   const correctAnswer = parityCheck(randomNum) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
+
 const startGameEven = () => console.log(gameLogic(gameEven, conditions));
 export default startGameEven;
