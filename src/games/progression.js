@@ -1,18 +1,24 @@
 import randomInteger from '../randomnumber.js';
+import gameLogic from '../index.js';
 
-const conditions = 'What number is missing in the progression?';
-const gameFunction = () => {
-  const progressionArr = [];
-  progressionArr.length = randomInteger(5, 10);
-  const progressionStep = randomInteger(1, 10);
-  progressionArr[0] = randomInteger(0, 100);
-  for (let i = 1; i < progressionArr.length; i += 1) {
-    progressionArr[i] = progressionArr[i - 1] + progressionStep;
+const generateProgression = (startStep, step, progresLength) => {
+  const progression = [];
+  for (let i = 0; i < progresLength; i += 1) {
+    progression.push(startStep + (step * i));
   }
-  const missingNumber = randomInteger(0, progressionArr.length - 1);
-  const correctAnswer = String(progressionArr[missingNumber]);
-  progressionArr[missingNumber] = '..';
-  const question = progressionArr.join(' ');
+  return progression;
+};
+const conditions = 'What number is missing in the progression?';
+const gameProgression = () => {
+  const startStep = randomInteger(1, 10);
+  const step = randomInteger(1, 10);
+  const progresLength = randomInteger(5, 10);
+  const progression = generateProgression(startStep, step, progresLength);
+  const missingNumber = randomInteger(0, progresLength - 1);
+  const correctAnswer = String(progression[missingNumber]);
+  progression[missingNumber] = '..';
+  const question = progression.join(' ');
   return [question, correctAnswer];
 };
-export { gameFunction, conditions };
+const startGameProgression = () => console.log(gameLogic(gameProgression, conditions));
+export default startGameProgression;

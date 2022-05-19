@@ -11,8 +11,9 @@ const prime = (num) => {
   return true;
 };
 const gamePrime = () => {
-  const question = randomInteger(0, 100);
-  const correctAnswer = prime(question) ? 'yes' : 'no';
+  const randomNum = randomInteger(1, 100);
+  const question = `${randomNum}`;
+  const correctAnswer = prime(randomNum) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 const startGamePrime = () => console.log(gameLogic(gamePrime, conditions));
