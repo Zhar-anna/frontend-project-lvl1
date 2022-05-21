@@ -2,19 +2,17 @@ import randomInteger from '../randomnumber.js';
 import gameLogic from '../index.js';
 
 const isPrime = (num) => {
-  let i = 2;
-  while (i < num / 2) {
+  for (let i = 2; i <= Math.sqrt(num); i += 1) {
     if (num % i === 0) {
       return false;
     }
-    i += 1;
   }
   return true;
 };
 
 const conditions = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const gamePrime = () => {
-  const randomNum = randomInteger(5, 100);
+  const randomNum = randomInteger(2, 100);
   const question = `${randomNum}`;
   const correctAnswer = isPrime(randomNum) ? 'yes' : 'no';
   return [question, correctAnswer];
