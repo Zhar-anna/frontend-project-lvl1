@@ -5,10 +5,12 @@ const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
-  for (let i = 2; i < Math.sqrt(num); i += 1) {
+  let i = 2;
+  while (i < num / 2) {
     if (num % i === 0) {
       return false;
     }
+    i += 1;
   }
   return true;
 };
