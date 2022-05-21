@@ -12,10 +12,10 @@ const gameLogic = (gameFunction, conditions) => {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('You answer: ');
     if (userAnswer !== correctAnswer) {
-      return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'\nLet's try again, ${userName}!`;
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'\nLet's try again, ${userName}!`);
     }
     console.log('Correct!');
   }
-  return `Congratulations, ${userName}!`;
+  console.log(`Congratulations, ${userName}!`);
 };
 export default gameLogic;
