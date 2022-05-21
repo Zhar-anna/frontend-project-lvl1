@@ -20,5 +20,4 @@ const gameProgression = () => {
   const question = progression.join(' ');
   return [question, correctAnswer];
 };
-const startGameProgression = () => console.log(gameLogic(gameProgression, conditions));
-export default startGameProgression;
+export default () => gameLogic(gameProgression, conditions);

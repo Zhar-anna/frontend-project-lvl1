@@ -2,15 +2,10 @@ import randomInteger from '../randomnumber.js';
 import gameLogic from '../index.js';
 
 const prime = (num) => {
-  if (num < 2) {
-    return false;
-  }
-  let i = 2;
-  while (i < num / 2) {
-    if (num % i === 0) {
+  for (let i = 2; i < Math.sqrt(num); i += 1) {
+    if (num % i === 0 || num < 2) {
       return false;
     }
-    i += 1;
   }
   return true;
 };
@@ -22,6 +17,4 @@ const gamePrime = () => {
   const correctAnswer = prime(randomNum) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
-
-const startGamePrime = () => console.log(gameLogic(gamePrime, conditions));
-export default startGamePrime;
+export default () => gameLogic(gamePrime, conditions);
