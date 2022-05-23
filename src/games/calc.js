@@ -1,10 +1,10 @@
-import randomInteger from '../randomnumber.js';
+import generateRandomNumber from '../randomnumber.js';
 import gameLogic from '../index.js';
 
-const conditions = 'What is the result of the expression?';
+const rules = 'What is the result of the expression?';
 const mathoperators = ['+', '-', '*'];
-const calculate = (num1, num2, operat) => {
-  switch (operat) {
+const calculate = (num1, num2, operator) => {
+  switch (operator) {
     case '+':
       return num1 + num2;
     case '-':
@@ -16,13 +16,13 @@ const calculate = (num1, num2, operat) => {
   }
 };
 const gameCalc = () => {
-  const num1 = randomInteger(0, 100);
-  const num2 = randomInteger(0, 100);
-  const randomOperators = randomInteger(0, mathoperators.length - 1);
-  const operator = mathoperators[randomOperators];
+  const num1 = generateRandomNumber(0, 100);
+  const num2 = generateRandomNumber(0, 100);
+  const indexrandomOperators = generateRandomNumber(0, mathoperators.length - 1);
+  const operator = mathoperators[indexrandomOperators];
   const question = `${num1} ${operator} ${num2}`;
 
   const correctAnswer = calculate(num1, num2, operator).toString();
   return [question, correctAnswer];
 };
-export default () => gameLogic(gameCalc, conditions);
+export default () => gameLogic(gameCalc, rules);

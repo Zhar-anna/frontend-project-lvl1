@@ -1,13 +1,13 @@
-import randomInteger from '../randomnumber.js';
+import generateRandomNumber from '../randomnumber.js';
 import gameLogic from '../index.js';
 
-const isParity = (num) => num % 2 === 0;
-const conditions = 'Answer "yes" if the number is even, other answer "no"';
+const isEven = (num) => num % 2 === 0;
+const rules = 'Answer "yes" if the number is even, other answer "no"';
 const gameEven = () => {
-  const randomNum = randomInteger(1, 100);
+  const randomNum = generateRandomNumber(1, 100);
   const question = `${randomNum}`;
-  const correctAnswer = isParity(randomNum) ? 'yes' : 'no';
+  const correctAnswer = isEven(randomNum) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-export default () => gameLogic(gameEven, conditions);
+export default () => gameLogic(gameEven, rules);
